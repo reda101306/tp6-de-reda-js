@@ -1,1 +1,0 @@
-# tp6-de-reda-js
