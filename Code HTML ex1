@@ -12,7 +12,7 @@
             margin-right: auto;
         }
         .changeColor {
-            background-color: gold;
+            background-color: lightblue;
         }
         p {
             text-align: center;
