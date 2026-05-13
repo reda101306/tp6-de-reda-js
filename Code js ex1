@@ -1,1 +1,11 @@
-
+ let paragraphe = document.getElementById('changer');
+document.getElementById('changeText').addEventListener('click', function() {
+    paragraphe.innerText = 'Un clic a été détecté';
+    });
+document.getElementById('changeColor').addEventListener('click', function() {
+    paragraphe.classList.toggle('changeColor');
+    });
+    paragraphe.addEventListener('click', function() {
+    paragraphe.innerHTML = 'Tu as cliqué sur le paragraphe';
+    });
+    
