@@ -25,6 +25,6 @@
         <button id="changeText">Modifier</button>
         <button id="changeColor">Styler</button>
     </div>
-    <script src="tp5.js"></script>
+    <script src="Tp6_ex1.js"></script>
 </body>
 </html>
