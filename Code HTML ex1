@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manipulation du DOM avec JavaScript</title>
+    <style>
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .changeColor {
+            background-color: gold;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+<body>
+    <div>
+        <p id="changer">Ceci est un paragraphe</p>
+        <button id="changeText">Modifier</button>
+        <button id="changeColor">Styler</button>
+    </div>
+    <script src="tp5.js"></script>
+</body>
+</html>
