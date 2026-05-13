@@ -1,0 +1,34 @@
+const champ      = document.getElementById('champ-tache');
+const btnAjouter = document.getElementById('btn-ajouter');
+const liste      = document.getElementById('liste-taches');
+function ajouterTache() {
+  const texte = champ.value.trim();
+    if (!texte) return;
+     const li = document.createElement('li');
+      li.classList.add('tache');
+    const span = document.createElement('span');
+      span.classList.add('tache-texte');
+      span.textContent = texte;
+    const btnValider = document.createElement('button');
+      btnValider.classList.add('btn-valider');
+       btnValider.textContent = '✔ complet';
+      btnValider.addEventListener('click', function () {
+        li.classList.toggle('accomplie');
+        });
+    const btnSupprimer = document.createElement('button');
+      btnSupprimer.classList.add('btn-supprimer');
+      btnSupprimer.textContent = '✕ Supprimer';
+      btnSupprimer.addEventListener('click', function () {
+        liste.removeChild(li);
+        });
+        li.appendChild(span);
+        li.appendChild(btnValider);
+        li.appendChild(btnSupprimer);
+        liste.appendChild(li);
+        champ.value = '';
+        champ.focus();
+      }
+      btnAjouter.addEventListener('click', ajouterTache);
+      champ.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') ajouterTache();
+      });
