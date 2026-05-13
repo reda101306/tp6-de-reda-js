@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 16px;
+    background-color: #f4f6f9;
+}
+
+h1 {
+    color: #6a1b9a;
+    text-align: center;
+}
+
+.form-ajout {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-ajout input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 2px solid #b39ddb;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.form-ajout button {
+    padding: 8px 16px;
+    background: #8e24aa;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#liste-taches {
+    list-style: none;
+    padding: 0;
+}
+
+.tache {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border: 1px solid #d1c4e9;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    background: #ede7f6;
+}
+
+.tache-texte {
+    flex: 1;
+    font-size: 15px;
+}
+
+.tache.accomplie .tache-texte {
+    text-decoration: line-through;
+    color: #9575cd;
+}
+
+.btn-valider {
+    background: #26a69a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-supprimer {
+    background: #ef5350;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
